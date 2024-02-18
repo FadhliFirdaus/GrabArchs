@@ -1,13 +1,15 @@
 //
-//  ContentView.swift
+//  HomeLayout.swift
 //  GrabArchitecture
 //
 //  Created by Fadhli Firdaus on 13/02/2024.
 //
 
+import Foundation
 import SwiftUI
 
-struct ContentView: View {
+
+struct HomeLayout: View {
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -17,8 +19,4 @@ struct ContentView: View {
         }
         .padding()
     }
-}
-
-#Preview {
-    ContentView()
 }

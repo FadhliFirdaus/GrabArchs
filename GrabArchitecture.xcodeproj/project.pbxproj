@@ -8,17 +8,41 @@
 
 /* Begin PBXBuildFile section */
 		71BA2A3F2B7BC3C800F623B5 /* GrabArchitectureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BA2A3E2B7BC3C800F623B5 /* GrabArchitectureApp.swift */; };
-		71BA2A412B7BC3C800F623B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BA2A402B7BC3C800F623B5 /* ContentView.swift */; };
+		71BA2A412B7BC3C800F623B5 /* ArchPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BA2A402B7BC3C800F623B5 /* ArchPickerView.swift */; };
 		71BA2A432B7BC3C900F623B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71BA2A422B7BC3C900F623B5 /* Assets.xcassets */; };
 		71BA2A462B7BC3C900F623B5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71BA2A452B7BC3C900F623B5 /* Preview Assets.xcassets */; };
+		71BA2A4D2B7BC61F00F623B5 /* HomeLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BA2A4C2B7BC61F00F623B5 /* HomeLayout.swift */; };
+		71BA2A4F2B7BC69000F623B5 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BA2A4E2B7BC69000F623B5 /* SplashScreen.swift */; };
+		71BA2A512B7BC72E00F623B5 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BA2A502B7BC72E00F623B5 /* Helper.swift */; };
+		71BA2A532B7BC7EF00F623B5 /* ArchPickerLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BA2A522B7BC7EF00F623B5 /* ArchPickerLayout.swift */; };
+		71BA2A562B7BCA9400F623B5 /* Archs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BA2A552B7BCA9400F623B5 /* Archs.swift */; };
+		71BA2A592B7BD0C100F623B5 /* CircleTextIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BA2A582B7BD0C100F623B5 /* CircleTextIndicator.swift */; };
+		71BA2A5B2B7BD37200F623B5 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BA2A5A2B7BD37200F623B5 /* K.swift */; };
+		71BA2A612B7BD78D00F623B5 /* DebugUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BA2A602B7BD78D00F623B5 /* DebugUtils.swift */; };
+		71BA2A632B7BDA3800F623B5 /* MVHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BA2A622B7BDA3800F623B5 /* MVHome.swift */; };
+		71BA2A652B7BDBCF00F623B5 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BA2A642B7BDBCF00F623B5 /* Shared.swift */; };
+		71BA2A672B7BE6E400F623B5 /* MVHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BA2A662B7BE6E400F623B5 /* MVHomeView.swift */; };
+		71BA2A6A2B7C00C700F623B5 /* inter.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71BA2A692B7C00C700F623B5 /* inter.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		71BA2A3B2B7BC3C800F623B5 /* GrabArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrabArchitecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71BA2A3E2B7BC3C800F623B5 /* GrabArchitectureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrabArchitectureApp.swift; sourceTree = "<group>"; };
-		71BA2A402B7BC3C800F623B5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		71BA2A402B7BC3C800F623B5 /* ArchPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchPickerView.swift; sourceTree = "<group>"; };
 		71BA2A422B7BC3C900F623B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71BA2A452B7BC3C900F623B5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		71BA2A4C2B7BC61F00F623B5 /* HomeLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLayout.swift; sourceTree = "<group>"; };
+		71BA2A4E2B7BC69000F623B5 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		71BA2A502B7BC72E00F623B5 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		71BA2A522B7BC7EF00F623B5 /* ArchPickerLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchPickerLayout.swift; sourceTree = "<group>"; };
+		71BA2A552B7BCA9400F623B5 /* Archs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Archs.swift; sourceTree = "<group>"; };
+		71BA2A582B7BD0C100F623B5 /* CircleTextIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleTextIndicator.swift; sourceTree = "<group>"; };
+		71BA2A5A2B7BD37200F623B5 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
+		71BA2A602B7BD78D00F623B5 /* DebugUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugUtils.swift; sourceTree = "<group>"; };
+		71BA2A622B7BDA3800F623B5 /* MVHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVHome.swift; sourceTree = "<group>"; };
+		71BA2A642B7BDBCF00F623B5 /* Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
+		71BA2A662B7BE6E400F623B5 /* MVHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVHomeView.swift; sourceTree = "<group>"; };
+		71BA2A692B7C00C700F623B5 /* inter.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = inter.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +76,21 @@
 			isa = PBXGroup;
 			children = (
 				71BA2A3E2B7BC3C800F623B5 /* GrabArchitectureApp.swift */,
-				71BA2A402B7BC3C800F623B5 /* ContentView.swift */,
+				71BA2A402B7BC3C800F623B5 /* ArchPickerView.swift */,
+				71BA2A4C2B7BC61F00F623B5 /* HomeLayout.swift */,
+				71BA2A4E2B7BC69000F623B5 /* SplashScreen.swift */,
+				71BA2A522B7BC7EF00F623B5 /* ArchPickerLayout.swift */,
+				71BA2A5A2B7BD37200F623B5 /* K.swift */,
+				71BA2A502B7BC72E00F623B5 /* Helper.swift */,
+				71BA2A602B7BD78D00F623B5 /* DebugUtils.swift */,
+				71BA2A552B7BCA9400F623B5 /* Archs.swift */,
+				71BA2A642B7BDBCF00F623B5 /* Shared.swift */,
+				71BA2A682B7C00A800F623B5 /* Fonts */,
+				71BA2A5F2B7BD64400F623B5 /* VIPER */,
+				71BA2A5E2B7BD63F00F623B5 /* MV* */,
+				71BA2A5D2B7BD63A00F623B5 /* MVC */,
+				71BA2A5C2B7BD63500F623B5 /* MVVM */,
+				71BA2A572B7BD0AF00F623B5 /* Components */,
 				71BA2A422B7BC3C900F623B5 /* Assets.xcassets */,
 				71BA2A442B7BC3C900F623B5 /* Preview Content */,
 			);
@@ -65,6 +103,52 @@
 				71BA2A452B7BC3C900F623B5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		71BA2A572B7BD0AF00F623B5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				71BA2A582B7BD0C100F623B5 /* CircleTextIndicator.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		71BA2A5C2B7BD63500F623B5 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		71BA2A5D2B7BD63A00F623B5 /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
+		71BA2A5E2B7BD63F00F623B5 /* MV* */ = {
+			isa = PBXGroup;
+			children = (
+				71BA2A622B7BDA3800F623B5 /* MVHome.swift */,
+				71BA2A662B7BE6E400F623B5 /* MVHomeView.swift */,
+			);
+			path = "MV*";
+			sourceTree = "<group>";
+		};
+		71BA2A5F2B7BD64400F623B5 /* VIPER */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VIPER;
+			sourceTree = "<group>";
+		};
+		71BA2A682B7C00A800F623B5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				71BA2A692B7C00C700F623B5 /* inter.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71BA2A462B7BC3C900F623B5 /* Preview Assets.xcassets in Resources */,
+				71BA2A6A2B7C00C700F623B5 /* inter.ttf in Resources */,
 				71BA2A432B7BC3C900F623B5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +222,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71BA2A412B7BC3C800F623B5 /* ContentView.swift in Sources */,
+				71BA2A632B7BDA3800F623B5 /* MVHome.swift in Sources */,
+				71BA2A5B2B7BD37200F623B5 /* K.swift in Sources */,
+				71BA2A592B7BD0C100F623B5 /* CircleTextIndicator.swift in Sources */,
+				71BA2A4F2B7BC69000F623B5 /* SplashScreen.swift in Sources */,
+				71BA2A672B7BE6E400F623B5 /* MVHomeView.swift in Sources */,
+				71BA2A412B7BC3C800F623B5 /* ArchPickerView.swift in Sources */,
+				71BA2A512B7BC72E00F623B5 /* Helper.swift in Sources */,
+				71BA2A652B7BDBCF00F623B5 /* Shared.swift in Sources */,
+				71BA2A612B7BD78D00F623B5 /* DebugUtils.swift in Sources */,
+				71BA2A4D2B7BC61F00F623B5 /* HomeLayout.swift in Sources */,
 				71BA2A3F2B7BC3C800F623B5 /* GrabArchitectureApp.swift in Sources */,
+				71BA2A532B7BC7EF00F623B5 /* ArchPickerLayout.swift in Sources */,
+				71BA2A562B7BCA9400F623B5 /* Archs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

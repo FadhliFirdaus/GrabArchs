@@ -11,7 +11,7 @@ import SwiftUI
 struct GrabArchitectureApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ArchPickerView()
         }
     }
 }
