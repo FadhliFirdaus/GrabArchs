@@ -11,7 +11,7 @@ struct ArchPickerView: View {
     
     @State var isShowingSplash = true
     @State var timer: Timer?
-    @State var duration = 0
+    @State var duration = 2
     @State var opacityAnimation =  1.0
 
     var body: some View {

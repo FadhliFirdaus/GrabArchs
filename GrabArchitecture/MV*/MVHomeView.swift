@@ -73,8 +73,8 @@ struct CardListView:View {
     var body: some View {
         ScrollView(.horizontal){
             HStack(spacing:0){
-                ForEach(0..<cards.count){index in
-                    let data = cards[index]
+                ForEach(0..<cards.count, id: \.self){
+                    let data = cards[$0]
                     HStack{
                         VStack(alignment: .leading, spacing:0){
                             Spacer()
@@ -111,50 +111,19 @@ struct CardListView:View {
 }
 
 struct SearchBarView: View {
+    @State var searchText = ""
     var body: some View {
         HStack(spacing:0){
             Spacer()
                 .frame(width: 10)
-            ZStack {
-                RoundedRectangle(cornerRadius: 6)
-                    .frame(width: screenWidth/7, height: screenWidth/7, alignment: .center)
-                    .shadow(radius: 3)
-                    .foregroundColor(.white)
-                Image(systemName: "barcode.viewfinder")
-                    .resizable()
-                    .frame(width: screenWidth/7, height: screenWidth/7, alignment: .center)
-                    .scaleEffect(0.55)
-            }
+            CardButtonWithImage(systemName: "barcode.viewfinder")
+                .frame(width: screenWidth/7, height: screenWidth/7, alignment: .center)
             
             Spacer()
                 .frame(width: 10)
             
-            ZStack {
-                RoundedRectangle(cornerRadius: 6)
-                    .shadow(radius: 3)
-                    .foregroundColor(.white)
-                    .frame(height: screenWidth/7)
-                HStack(spacing:0){
-                    Image(systemName: "magnifyingglass")
-                        .resizable()
-                        .frame(width: screenWidth/7, height: screenWidth/7, alignment: .center)
-                        .scaleEffect(0.4)
-                    Spacer()
-                    VStack(spacing:0){
-                        Spacer()
-                        TextEditor(text: .constant("Search Food"))
-                            .frame(width: screenWidth * 3/7)
-                        Spacer()
-                    }
-                    Divider()
-                        .frame(height: screenWidth/7)
-                    Image(systemName: "heart")
-                        .resizable()
-                        .frame(width: screenWidth/7, height: screenWidth/7, alignment: .center)
-                        .scaleEffect(0.4)
-                }
-            }
-            .frame(height: screenWidth/7, alignment: .center)
+            SearchBarWithFavourite()
+            
             Spacer()
                 .frame(width: 10)
         }
@@ -165,7 +134,7 @@ struct SearchBarView: View {
 struct LogosList: View {
     var body: some View {
         HStack(spacing:0){
-            ForEach(0..<logos.count){index in
+            ForEach(0..<logos.count, id:\.self){index in
                 VStack(spacing:0){
                     if index != 3 {
                         Image(logos[index].1)
@@ -174,24 +143,70 @@ struct LogosList: View {
                             .scaledToFit()
                             .scaleEffect(0.75)
                     } else {
-                        ZStack {
-                            Circle().foregroundColor(Color.green)
-                                .frame(width: screenWidth/6, height: screenWidth/6, alignment: .center)
-                                .opacity(0.15)
-                            Image(systemName: logos[index].1)
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: screenWidth/4, height: screenWidth/4, alignment: .center)
-                                .scaleEffect(0.5)
-                                .foregroundColor(Color.green)
-                        }
-                        
+                        GreenCircleWithImage(systemName: logos[index].1)
                     }
                     Text("\(logos[index].0)")
                         .font(Font.custom("inter", size: 15))
                 }
                 .frame(alignment: .center)
             }
+        }
+    }
+}
+
+struct GreenCircleWithImage: View {
+    let systemName:String
+    var body: some View {
+        ZStack {
+            Circle().foregroundColor(Color.green)
+                .frame(width: screenWidth/6, height: screenWidth/6, alignment: .center)
+                .opacity(0.15)
+            Image(systemName: self.systemName)
+                .resizable()
+                .scaledToFit()
+                .frame(width: screenWidth/4, height: screenWidth/4, alignment: .center)
+                .scaleEffect(0.5)
+                .foregroundColor(Color.green)
+        }
+    }
+}
+
+struct SearchBarWithFavourite: View {
+    @State var searchText = ""
+    var body: some View {
+        ZStack {
+            CardViewUI()
+                .frame(height: screenWidth/7)
+            HStack(spacing:0){
+                Image(systemName: "magnifyingglass")
+                    .resizable()
+                    .frame(width: screenWidth/7, height: screenWidth/7, alignment: .center)
+                    .scaleEffect(0.4)
+                VStack(spacing:0){
+                    Spacer()
+                    TextField("Search Food", text: $searchText)
+                    Spacer()
+                }
+                Divider()
+                    .frame(height: screenWidth/7)
+                Image(systemName: "heart")
+                    .resizable()
+                    .frame(width: screenWidth/7, height: screenWidth/7, alignment: .center)
+                    .scaleEffect(0.4)
+            }
+        }
+        .frame(height: screenWidth/7, alignment: .center)
+    }
+}
+
+struct CardButtonWithImage: View {
+    let systemName:String
+    var body: some View {
+        ZStack {
+            CardViewUI()
+            Image(systemName: systemName)
+                .resizable()
+                .padding(12)
         }
     }
 }

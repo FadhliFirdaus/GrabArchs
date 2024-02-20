@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 enum ArchPages:String {
     case Picker = "Picker"
@@ -13,4 +14,9 @@ enum ArchPages:String {
     case MVC = "MVC"
     case MV = "MV"
     case VIPER = "VIPER"
+}
+
+struct K {
+    static let screenWidth = UIScreen.main.bounds.width
+    static let screenHeight = UIScreen.main.bounds.height
 }

@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71798CF52B83EA9800913433 /* HomeVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71798CF42B83EA9800913433 /* HomeVC.storyboard */; };
+		71798CF82B83EC1300913433 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71798CF72B83EC1300913433 /* HomeController.swift */; };
+		71798CFB2B83EE1D00913433 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71798CFA2B83EE1D00913433 /* CardView.swift */; };
+		719E301F2B83F4B10069C112 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719E301E2B83F4B10069C112 /* Protocols.swift */; };
+		719E30222B83FC5A0069C112 /* PaddedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719E30212B83FC5A0069C112 /* PaddedTextField.swift */; };
+		71A14D2F2B84D2B200531926 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A14D2E2B84D2B200531926 /* TabView.swift */; };
+		71A14D312B84D39F00531926 /* CardViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A14D302B84D39F00531926 /* CardViewUI.swift */; };
 		71BA2A3F2B7BC3C800F623B5 /* GrabArchitectureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BA2A3E2B7BC3C800F623B5 /* GrabArchitectureApp.swift */; };
 		71BA2A412B7BC3C800F623B5 /* ArchPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BA2A402B7BC3C800F623B5 /* ArchPickerView.swift */; };
 		71BA2A432B7BC3C900F623B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71BA2A422B7BC3C900F623B5 /* Assets.xcassets */; };
 		71BA2A462B7BC3C900F623B5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71BA2A452B7BC3C900F623B5 /* Preview Assets.xcassets */; };
-		71BA2A4D2B7BC61F00F623B5 /* HomeLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BA2A4C2B7BC61F00F623B5 /* HomeLayout.swift */; };
 		71BA2A4F2B7BC69000F623B5 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BA2A4E2B7BC69000F623B5 /* SplashScreen.swift */; };
 		71BA2A512B7BC72E00F623B5 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BA2A502B7BC72E00F623B5 /* Helper.swift */; };
 		71BA2A532B7BC7EF00F623B5 /* ArchPickerLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BA2A522B7BC7EF00F623B5 /* ArchPickerLayout.swift */; };
-		71BA2A562B7BCA9400F623B5 /* Archs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BA2A552B7BCA9400F623B5 /* Archs.swift */; };
 		71BA2A592B7BD0C100F623B5 /* CircleTextIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BA2A582B7BD0C100F623B5 /* CircleTextIndicator.swift */; };
 		71BA2A5B2B7BD37200F623B5 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BA2A5A2B7BD37200F623B5 /* K.swift */; };
 		71BA2A612B7BD78D00F623B5 /* DebugUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BA2A602B7BD78D00F623B5 /* DebugUtils.swift */; };
@@ -26,16 +31,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		71798CF42B83EA9800913433 /* HomeVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeVC.storyboard; sourceTree = "<group>"; };
+		71798CF72B83EC1300913433 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		71798CFA2B83EE1D00913433 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		719E301E2B83F4B10069C112 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		719E30212B83FC5A0069C112 /* PaddedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddedTextField.swift; sourceTree = "<group>"; };
+		71A14D2E2B84D2B200531926 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		71A14D302B84D39F00531926 /* CardViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewUI.swift; sourceTree = "<group>"; };
 		71BA2A3B2B7BC3C800F623B5 /* GrabArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrabArchitecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71BA2A3E2B7BC3C800F623B5 /* GrabArchitectureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrabArchitectureApp.swift; sourceTree = "<group>"; };
 		71BA2A402B7BC3C800F623B5 /* ArchPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchPickerView.swift; sourceTree = "<group>"; };
 		71BA2A422B7BC3C900F623B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71BA2A452B7BC3C900F623B5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		71BA2A4C2B7BC61F00F623B5 /* HomeLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLayout.swift; sourceTree = "<group>"; };
 		71BA2A4E2B7BC69000F623B5 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		71BA2A502B7BC72E00F623B5 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		71BA2A522B7BC7EF00F623B5 /* ArchPickerLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchPickerLayout.swift; sourceTree = "<group>"; };
-		71BA2A552B7BCA9400F623B5 /* Archs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Archs.swift; sourceTree = "<group>"; };
 		71BA2A582B7BD0C100F623B5 /* CircleTextIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleTextIndicator.swift; sourceTree = "<group>"; };
 		71BA2A5A2B7BD37200F623B5 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
 		71BA2A602B7BD78D00F623B5 /* DebugUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugUtils.swift; sourceTree = "<group>"; };
@@ -56,6 +66,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71798CF12B83EA1F00913433 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				71798CF72B83EC1300913433 /* HomeController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		71798CF32B83EA2C00913433 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		71798CF62B83EC0200913433 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				71798CF42B83EA9800913433 /* HomeVC.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		719E30202B83F72F0069C112 /* PickerFiles */ = {
+			isa = PBXGroup;
+			children = (
+				71BA2A402B7BC3C800F623B5 /* ArchPickerView.swift */,
+			);
+			path = PickerFiles;
+			sourceTree = "<group>";
+		};
+		71A14D2D2B84D25D00531926 /* ComponentsUI */ = {
+			isa = PBXGroup;
+			children = (
+				71A14D2E2B84D2B200531926 /* TabView.swift */,
+				71A14D302B84D39F00531926 /* CardViewUI.swift */,
+				71BA2A582B7BD0C100F623B5 /* CircleTextIndicator.swift */,
+			);
+			path = ComponentsUI;
+			sourceTree = "<group>";
+		};
 		71BA2A322B7BC3C800F623B5 = {
 			isa = PBXGroup;
 			children = (
@@ -75,22 +126,22 @@
 		71BA2A3D2B7BC3C800F623B5 /* GrabArchitecture */ = {
 			isa = PBXGroup;
 			children = (
+				719E30202B83F72F0069C112 /* PickerFiles */,
 				71BA2A3E2B7BC3C800F623B5 /* GrabArchitectureApp.swift */,
-				71BA2A402B7BC3C800F623B5 /* ArchPickerView.swift */,
-				71BA2A4C2B7BC61F00F623B5 /* HomeLayout.swift */,
 				71BA2A4E2B7BC69000F623B5 /* SplashScreen.swift */,
 				71BA2A522B7BC7EF00F623B5 /* ArchPickerLayout.swift */,
 				71BA2A5A2B7BD37200F623B5 /* K.swift */,
 				71BA2A502B7BC72E00F623B5 /* Helper.swift */,
-				71BA2A602B7BD78D00F623B5 /* DebugUtils.swift */,
-				71BA2A552B7BCA9400F623B5 /* Archs.swift */,
+				719E301E2B83F4B10069C112 /* Protocols.swift */,
 				71BA2A642B7BDBCF00F623B5 /* Shared.swift */,
-				71BA2A682B7C00A800F623B5 /* Fonts */,
 				71BA2A5F2B7BD64400F623B5 /* VIPER */,
 				71BA2A5E2B7BD63F00F623B5 /* MV* */,
 				71BA2A5D2B7BD63A00F623B5 /* MVC */,
 				71BA2A5C2B7BD63500F623B5 /* MVVM */,
+				71A14D2D2B84D25D00531926 /* ComponentsUI */,
 				71BA2A572B7BD0AF00F623B5 /* Components */,
+				71BA2A682B7C00A800F623B5 /* Fonts */,
+				71BA2A602B7BD78D00F623B5 /* DebugUtils.swift */,
 				71BA2A422B7BC3C900F623B5 /* Assets.xcassets */,
 				71BA2A442B7BC3C900F623B5 /* Preview Content */,
 			);
@@ -108,7 +159,8 @@
 		71BA2A572B7BD0AF00F623B5 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				71BA2A582B7BD0C100F623B5 /* CircleTextIndicator.swift */,
+				71798CFA2B83EE1D00913433 /* CardView.swift */,
+				719E30212B83FC5A0069C112 /* PaddedTextField.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -123,6 +175,9 @@
 		71BA2A5D2B7BD63A00F623B5 /* MVC */ = {
 			isa = PBXGroup;
 			children = (
+				71798CF32B83EA2C00913433 /* Model */,
+				71798CF62B83EC0200913433 /* View */,
+				71798CF12B83EA1F00913433 /* Controller */,
 			);
 			path = MVC;
 			sourceTree = "<group>";
@@ -211,6 +266,7 @@
 			files = (
 				71BA2A462B7BC3C900F623B5 /* Preview Assets.xcassets in Resources */,
 				71BA2A6A2B7C00C700F623B5 /* inter.ttf in Resources */,
+				71798CF52B83EA9800913433 /* HomeVC.storyboard in Resources */,
 				71BA2A432B7BC3C900F623B5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,17 +280,21 @@
 			files = (
 				71BA2A632B7BDA3800F623B5 /* MVHome.swift in Sources */,
 				71BA2A5B2B7BD37200F623B5 /* K.swift in Sources */,
+				71798CF82B83EC1300913433 /* HomeController.swift in Sources */,
 				71BA2A592B7BD0C100F623B5 /* CircleTextIndicator.swift in Sources */,
+				71798CFB2B83EE1D00913433 /* CardView.swift in Sources */,
 				71BA2A4F2B7BC69000F623B5 /* SplashScreen.swift in Sources */,
 				71BA2A672B7BE6E400F623B5 /* MVHomeView.swift in Sources */,
 				71BA2A412B7BC3C800F623B5 /* ArchPickerView.swift in Sources */,
 				71BA2A512B7BC72E00F623B5 /* Helper.swift in Sources */,
 				71BA2A652B7BDBCF00F623B5 /* Shared.swift in Sources */,
+				71A14D312B84D39F00531926 /* CardViewUI.swift in Sources */,
 				71BA2A612B7BD78D00F623B5 /* DebugUtils.swift in Sources */,
-				71BA2A4D2B7BC61F00F623B5 /* HomeLayout.swift in Sources */,
+				71A14D2F2B84D2B200531926 /* TabView.swift in Sources */,
+				719E30222B83FC5A0069C112 /* PaddedTextField.swift in Sources */,
 				71BA2A3F2B7BC3C800F623B5 /* GrabArchitectureApp.swift in Sources */,
 				71BA2A532B7BC7EF00F623B5 /* ArchPickerLayout.swift in Sources */,
-				71BA2A562B7BCA9400F623B5 /* Archs.swift in Sources */,
+				719E301F2B83F4B10069C112 /* Protocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -24,7 +24,7 @@ struct ArchPickerLayout: View {
         case .MVVM:
             Text("MVVM")
         case .MVC:
-            Text("MVC")
+            HomeVCRepresentable()
         case .MV:
             MVHome()
         case .VIPER:
