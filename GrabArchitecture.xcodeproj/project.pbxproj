@@ -89,12 +89,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		719E30202B83F72F0069C112 /* PickerFiles */ = {
+		719E30202B83F72F0069C112 /* PickerViewMV */ = {
 			isa = PBXGroup;
 			children = (
+				71BA2A522B7BC7EF00F623B5 /* ArchPickerLayout.swift */,
 				71BA2A402B7BC3C800F623B5 /* ArchPickerView.swift */,
+				71BA2A4E2B7BC69000F623B5 /* SplashScreen.swift */,
 			);
-			path = PickerFiles;
+			path = PickerViewMV;
 			sourceTree = "<group>";
 		};
 		71A14D2D2B84D25D00531926 /* ComponentsUI */ = {
@@ -105,6 +107,17 @@
 				71BA2A582B7BD0C100F623B5 /* CircleTextIndicator.swift */,
 			);
 			path = ComponentsUI;
+			sourceTree = "<group>";
+		};
+		71A14D332B84E07800531926 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				71BA2A5A2B7BD37200F623B5 /* K.swift */,
+				71BA2A502B7BC72E00F623B5 /* Helper.swift */,
+				719E301E2B83F4B10069C112 /* Protocols.swift */,
+				71BA2A642B7BDBCF00F623B5 /* Shared.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		71BA2A322B7BC3C800F623B5 = {
@@ -126,14 +139,8 @@
 		71BA2A3D2B7BC3C800F623B5 /* GrabArchitecture */ = {
 			isa = PBXGroup;
 			children = (
-				719E30202B83F72F0069C112 /* PickerFiles */,
 				71BA2A3E2B7BC3C800F623B5 /* GrabArchitectureApp.swift */,
-				71BA2A4E2B7BC69000F623B5 /* SplashScreen.swift */,
-				71BA2A522B7BC7EF00F623B5 /* ArchPickerLayout.swift */,
-				71BA2A5A2B7BD37200F623B5 /* K.swift */,
-				71BA2A502B7BC72E00F623B5 /* Helper.swift */,
-				719E301E2B83F4B10069C112 /* Protocols.swift */,
-				71BA2A642B7BDBCF00F623B5 /* Shared.swift */,
+				719E30202B83F72F0069C112 /* PickerViewMV */,
 				71BA2A5F2B7BD64400F623B5 /* VIPER */,
 				71BA2A5E2B7BD63F00F623B5 /* MV* */,
 				71BA2A5D2B7BD63A00F623B5 /* MVC */,
@@ -141,6 +148,7 @@
 				71A14D2D2B84D25D00531926 /* ComponentsUI */,
 				71BA2A572B7BD0AF00F623B5 /* Components */,
 				71BA2A682B7C00A800F623B5 /* Fonts */,
+				71A14D332B84E07800531926 /* Utils */,
 				71BA2A602B7BD78D00F623B5 /* DebugUtils.swift */,
 				71BA2A422B7BC3C900F623B5 /* Assets.xcassets */,
 				71BA2A442B7BC3C900F623B5 /* Preview Content */,
