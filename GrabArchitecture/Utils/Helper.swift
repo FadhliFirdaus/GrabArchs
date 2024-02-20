@@ -1,9 +1,9 @@
-//
-//  Helper.swift
-//  GrabArchitecture
-//
-//  Created by Fadhli Firdaus on 13/02/2024.
-//
+    //
+    //  Helper.swift
+    //  GrabArchitecture
+    //
+    //  Created by Fadhli Firdaus on 13/02/2024.
+    //
 
 import Foundation
 import SwiftUI
@@ -29,8 +29,16 @@ extension Color {
     }
 }
 
-
+func formatFloatToNDecimalPlaces(_ value: Float, n:Int) -> String {
+    return String(format: "%.\(n)f", value)
+}
 
 let screenWidth = UIScreen.main.bounds.size.width
 let screenHeight = UIScreen.main.bounds.size.height
 let screenSize = UIScreen.main.bounds.size
+
+func getRandomColor() -> Color {
+    let randomColors: [Color] = [.red, .blue, .green, .orange, .purple, .pink, .yellow]
+    let randomIndex = Int.random(in: 0..<randomColors.count)
+    return randomColors[randomIndex]
+}

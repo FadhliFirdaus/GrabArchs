@@ -14,6 +14,15 @@
 		719E30222B83FC5A0069C112 /* PaddedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719E30212B83FC5A0069C112 /* PaddedTextField.swift */; };
 		71A14D2F2B84D2B200531926 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A14D2E2B84D2B200531926 /* TabView.swift */; };
 		71A14D312B84D39F00531926 /* CardViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A14D302B84D39F00531926 /* CardViewUI.swift */; };
+		71A14D392B84E6C400531926 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A14D382B84E6C400531926 /* Model.swift */; };
+		71A14D3D2B84F16500531926 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A14D3C2B84F16500531926 /* Extensions.swift */; };
+		71A14D3F2B84F1B700531926 /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A14D3E2B84F1B700531926 /* CustomModifiers.swift */; };
+		71A14D442B84FB7900531926 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 71A14D432B84FB7900531926 /* CodeScanner */; };
+		71A14D462B850BA300531926 /* WebViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A14D452B850BA300531926 /* WebViewRepresentable.swift */; };
+		71A14D482B85119300531926 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A14D472B85119300531926 /* Enums.swift */; };
+		71A14D4A2B85121B00531926 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A14D492B85121B00531926 /* Color.swift */; };
+		71A14D4D2B85153800531926 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A14D4C2B85153800531926 /* APIManager.swift */; };
+		71A14D502B8515F500531926 /* GooglePlaces in Frameworks */ = {isa = PBXBuildFile; productRef = 71A14D4F2B8515F500531926 /* GooglePlaces */; };
 		71BA2A3F2B7BC3C800F623B5 /* GrabArchitectureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BA2A3E2B7BC3C800F623B5 /* GrabArchitectureApp.swift */; };
 		71BA2A412B7BC3C800F623B5 /* ArchPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BA2A402B7BC3C800F623B5 /* ArchPickerView.swift */; };
 		71BA2A432B7BC3C900F623B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71BA2A422B7BC3C900F623B5 /* Assets.xcassets */; };
@@ -38,6 +47,13 @@
 		719E30212B83FC5A0069C112 /* PaddedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddedTextField.swift; sourceTree = "<group>"; };
 		71A14D2E2B84D2B200531926 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
 		71A14D302B84D39F00531926 /* CardViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewUI.swift; sourceTree = "<group>"; };
+		71A14D382B84E6C400531926 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		71A14D3C2B84F16500531926 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		71A14D3E2B84F1B700531926 /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
+		71A14D452B850BA300531926 /* WebViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewRepresentable.swift; sourceTree = "<group>"; };
+		71A14D472B85119300531926 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		71A14D492B85121B00531926 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		71A14D4C2B85153800531926 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		71BA2A3B2B7BC3C800F623B5 /* GrabArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrabArchitecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71BA2A3E2B7BC3C800F623B5 /* GrabArchitectureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrabArchitectureApp.swift; sourceTree = "<group>"; };
 		71BA2A402B7BC3C800F623B5 /* ArchPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchPickerView.swift; sourceTree = "<group>"; };
@@ -60,6 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71A14D442B84FB7900531926 /* CodeScanner in Frameworks */,
+				71A14D502B8515F500531926 /* GooglePlaces in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,10 +132,27 @@
 			children = (
 				71BA2A5A2B7BD37200F623B5 /* K.swift */,
 				71BA2A502B7BC72E00F623B5 /* Helper.swift */,
-				719E301E2B83F4B10069C112 /* Protocols.swift */,
-				71BA2A642B7BDBCF00F623B5 /* Shared.swift */,
+				71BA2A602B7BD78D00F623B5 /* DebugUtils.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		71A14D3A2B84E6D000531926 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				71A14D382B84E6C400531926 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		71A14D3B2B84E6DE00531926 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				71BA2A622B7BDA3800F623B5 /* MVHome.swift */,
+				71A14D452B850BA300531926 /* WebViewRepresentable.swift */,
+				71BA2A662B7BE6E400F623B5 /* MVHomeView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		71BA2A322B7BC3C800F623B5 = {
@@ -140,6 +175,13 @@
 			isa = PBXGroup;
 			children = (
 				71BA2A3E2B7BC3C800F623B5 /* GrabArchitectureApp.swift */,
+				71BA2A642B7BDBCF00F623B5 /* Shared.swift */,
+				71A14D472B85119300531926 /* Enums.swift */,
+				71A14D3C2B84F16500531926 /* Extensions.swift */,
+				71A14D3E2B84F1B700531926 /* CustomModifiers.swift */,
+				719E301E2B83F4B10069C112 /* Protocols.swift */,
+				71A14D492B85121B00531926 /* Color.swift */,
+				71A14D4C2B85153800531926 /* APIManager.swift */,
 				719E30202B83F72F0069C112 /* PickerViewMV */,
 				71BA2A5F2B7BD64400F623B5 /* VIPER */,
 				71BA2A5E2B7BD63F00F623B5 /* MV* */,
@@ -149,7 +191,6 @@
 				71BA2A572B7BD0AF00F623B5 /* Components */,
 				71BA2A682B7C00A800F623B5 /* Fonts */,
 				71A14D332B84E07800531926 /* Utils */,
-				71BA2A602B7BD78D00F623B5 /* DebugUtils.swift */,
 				71BA2A422B7BC3C900F623B5 /* Assets.xcassets */,
 				71BA2A442B7BC3C900F623B5 /* Preview Content */,
 			);
@@ -193,8 +234,8 @@
 		71BA2A5E2B7BD63F00F623B5 /* MV* */ = {
 			isa = PBXGroup;
 			children = (
-				71BA2A622B7BDA3800F623B5 /* MVHome.swift */,
-				71BA2A662B7BE6E400F623B5 /* MVHomeView.swift */,
+				71A14D3B2B84E6DE00531926 /* View */,
+				71A14D3A2B84E6D000531926 /* Model */,
 			);
 			path = "MV*";
 			sourceTree = "<group>";
@@ -230,6 +271,10 @@
 			dependencies = (
 			);
 			name = GrabArchitecture;
+			packageProductDependencies = (
+				71A14D432B84FB7900531926 /* CodeScanner */,
+				71A14D4F2B8515F500531926 /* GooglePlaces */,
+			);
 			productName = GrabArchitecture;
 			productReference = 71BA2A3B2B7BC3C800F623B5 /* GrabArchitecture.app */;
 			productType = "com.apple.product-type.application";
@@ -258,6 +303,10 @@
 				Base,
 			);
 			mainGroup = 71BA2A322B7BC3C800F623B5;
+			packageReferences = (
+				71A14D422B84FB7900531926 /* XCRemoteSwiftPackageReference "CodeScanner" */,
+				71A14D4E2B8515F500531926 /* XCRemoteSwiftPackageReference "ios-places-sdk" */,
+			);
 			productRefGroup = 71BA2A3C2B7BC3C800F623B5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -286,21 +335,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71A14D4D2B85153800531926 /* APIManager.swift in Sources */,
 				71BA2A632B7BDA3800F623B5 /* MVHome.swift in Sources */,
+				71A14D3F2B84F1B700531926 /* CustomModifiers.swift in Sources */,
+				71A14D4A2B85121B00531926 /* Color.swift in Sources */,
 				71BA2A5B2B7BD37200F623B5 /* K.swift in Sources */,
 				71798CF82B83EC1300913433 /* HomeController.swift in Sources */,
 				71BA2A592B7BD0C100F623B5 /* CircleTextIndicator.swift in Sources */,
 				71798CFB2B83EE1D00913433 /* CardView.swift in Sources */,
 				71BA2A4F2B7BC69000F623B5 /* SplashScreen.swift in Sources */,
 				71BA2A672B7BE6E400F623B5 /* MVHomeView.swift in Sources */,
+				71A14D3D2B84F16500531926 /* Extensions.swift in Sources */,
 				71BA2A412B7BC3C800F623B5 /* ArchPickerView.swift in Sources */,
+				71A14D482B85119300531926 /* Enums.swift in Sources */,
 				71BA2A512B7BC72E00F623B5 /* Helper.swift in Sources */,
+				71A14D392B84E6C400531926 /* Model.swift in Sources */,
 				71BA2A652B7BDBCF00F623B5 /* Shared.swift in Sources */,
 				71A14D312B84D39F00531926 /* CardViewUI.swift in Sources */,
 				71BA2A612B7BD78D00F623B5 /* DebugUtils.swift in Sources */,
 				71A14D2F2B84D2B200531926 /* TabView.swift in Sources */,
 				719E30222B83FC5A0069C112 /* PaddedTextField.swift in Sources */,
 				71BA2A3F2B7BC3C800F623B5 /* GrabArchitectureApp.swift in Sources */,
+				71A14D462B850BA300531926 /* WebViewRepresentable.swift in Sources */,
 				71BA2A532B7BC7EF00F623B5 /* ArchPickerLayout.swift in Sources */,
 				719E301F2B83F4B10069C112 /* Protocols.swift in Sources */,
 			);
@@ -439,6 +495,7 @@
 				DEVELOPMENT_TEAM = U442ACHGQ8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow the app to access your camera to initiate scanning";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -468,6 +525,7 @@
 				DEVELOPMENT_TEAM = U442ACHGQ8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow the app to access your camera to initiate scanning";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -508,6 +566,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		71A14D422B84FB7900531926 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.3;
+			};
+		};
+		71A14D4E2B8515F500531926 /* XCRemoteSwiftPackageReference "ios-places-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googlemaps/ios-places-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		71A14D432B84FB7900531926 /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 71A14D422B84FB7900531926 /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+		71A14D4F2B8515F500531926 /* GooglePlaces */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 71A14D4E2B8515F500531926 /* XCRemoteSwiftPackageReference "ios-places-sdk" */;
+			productName = GooglePlaces;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 71BA2A332B7BC3C800F623B5 /* Project object */;
 }
