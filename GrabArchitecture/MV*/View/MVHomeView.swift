@@ -11,7 +11,7 @@ import CodeScanner
 
 
 #Preview {
-    CardPager()
+    MVHomeView()
 }
 
 struct MVHomeView:View {
@@ -30,6 +30,7 @@ struct MVHomeView:View {
                         Spacer()
                             .frame(height: 10)
                         CardListView()
+//                        OrderAgainCards()
                         let randomizer = [AnyView(OrderAgainCards()), AnyView(CardPager())].shuffled()
                         ForEach(randomizer, id: \.uniqueIdentifier){view in
                             view
@@ -68,56 +69,58 @@ struct CardPager:View{
         if(commercialCards.isEmpty){
             EmptyView()
         } else {
-            VStack{
-                HStack{
-                    ForEach(commercialCards, id: \.self) { card in
-                        VStack{
-                            HStack{
-                                Button {
-                                    
-                                } label: {
-                                    HStack{
-                                        Text("\(card.ccCTAText)")
-                                            .foregroundColor(.black)
-                                        Spacer().frame(width: 12)
-                                        Image(systemName: "arrow.right")
-                                            .scaleEffect(0.8)
-                                            .background(Circle()
-                                                .scaleEffect(1.5)
-                                                .foregroundColor(Color.gray.opacity(0.15)))
-                                            .foregroundColor(.black)
+            ScrollView(.horizontal){
+                VStack{
+                    HStack{
+                        ForEach(Array(commercialCards.enumerated()), id: \.element.self) { index, card in
+                            VStack{
+                                HStack{
+                                    Button {
+                                        
+                                    } label: {
+                                        HStack{
+                                            Text("\(card.ccCTAText)")
+                                                .foregroundColor(.black)
+                                            Spacer().frame(width: 12)
+                                            Image(systemName: "arrow.right")
+                                                .scaleEffect(0.8)
+                                                .background(Circle()
+                                                    .scaleEffect(1.5)
+                                                    .foregroundColor(Color.gray.opacity(0.15)))
+                                                .foregroundColor(.black)
+                                        }
                                     }
+                                    Spacer()
                                 }
-                                Spacer()
+                                HStack {
+                                    let randomColor = getRandomColor()
+                                    CardViewUI(color: randomColor.opacity(0.15))
+                                        .frame(width: screenWidth - 20, height: screenHeight/4, alignment: .leading)
+                                    Spacer().frame(width: 20)
+                                }
+                                HStack {
+                                    Text("\(card.ccShortDesc)")
+                                        .textModifier(size: 17, weight: .heavy)
+                                    Spacer()
+                                }
                             }
-                            
-                            HStack {
-                                CardViewUI()
-                                    .frame(width: screenWidth - 20, height: screenHeight/4, alignment: .leading)
-                                    .foregroundColor(getRandomColor())
-                                Spacer().frame(width: 20)
-                            }
-                            HStack {
-                                Text("\(card.ccShortDesc)")
-                                    .textModifier(size: 17, weight: .heavy)
-                                Spacer()
-                            }
+                            .frame(width: screenWidth, height: screenHeight/2.5, alignment: .leading)
+                            .scaleEffect(0.95)
+                            .padding(.trailing, index == commercialCards.count - 1 ? 0 : -30)
                         }
-                        .frame(width: screenWidth, height: screenHeight/2.5, alignment: .leading)
-                        .scaleEffect(0.95)
-                        .padding(.trailing, -30)
                     }
                 }
+                .frame(height: screenHeight/3, alignment: .leading)
+                .scrollTargetLayout()
             }
-            .frame(width: screenWidth, height: screenHeight/2.5, alignment: .leading)
+            .scrollTargetBehavior(.viewAligned)
+//            .debugRed()
         }
     }
 }
 
-
-
 struct OrderAgainCards:View {
-    @State var historyList:[HistoryModel] = []
+    @State var historyList:[HistoryModel] = mockPurchaseHistories
     var body: some View {
         VStack{
             if(historyList.isEmpty){
@@ -160,7 +163,6 @@ struct OrderAgainCards:View {
                                                 .frame(alignment: .trailing)
                                                 .defaultTextModifier()
                                                 .background(Color.yellow.opacity(0.3))
-                                            
                                         }
                                     } else {
                                         Spacer()
@@ -175,6 +177,8 @@ struct OrderAgainCards:View {
                     .scrollIndicators(.hidden)
                     .frame(width: screenWidth, height: screenHeight/4.5, alignment: .top)
                 }
+                .frame(width: screenWidth, height: screenHeight/2.6, alignment: .top)
+//                .debugBlue()
                 .onAppear(perform: {
                     historyList = historyList.shuffled()
                 })
@@ -186,10 +190,10 @@ struct OrderAgainCards:View {
     }
     
     func fetchHistory(){
-        let randomDelayInSeconds = Double.random(in: 1...2)
-        DispatchQueue.main.asyncAfter(deadline: .now() + randomDelayInSeconds) {
-            historyList = mockPurchaseHistories
-        }
+//        let randomDelayInSeconds = Double.random(in: 1...2)
+//        DispatchQueue.main.asyncAfter(deadline: .now() + randomDelayInSeconds) {
+//            historyList = mockPurchaseHistories
+//        }
     }
     
     func getOfferString(offerType:Offer, offerValue:Int) -> String{
