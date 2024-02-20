@@ -25,7 +25,7 @@ class HomeVC : UIViewController {
     
     func configureViews(){
         scanButton.contentMode = .scaleToFill
-        let cardView = CardView(frame: scanButton.bounds)
+//        let cardView = CardView(frame: scanButton.bounds)
 //        let scanBounds = scanButton.frame
 //        scanButton.bringSubviewToFront(cardView)
     }
