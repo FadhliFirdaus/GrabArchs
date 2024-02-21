@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		716E9AD22B85E2EE000898EA /* FAQItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716E9AD12B85E2EE000898EA /* FAQItem.swift */; };
+		716E9AD42B85EA21000898EA /* IntentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716E9AD32B85EA21000898EA /* IntentManager.swift */; };
+		716E9AD62B85EB77000898EA /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716E9AD52B85EB77000898EA /* SettingsVC.swift */; };
 		71798CF52B83EA9800913433 /* HomeVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71798CF42B83EA9800913433 /* HomeVC.storyboard */; };
 		71798CF82B83EC1300913433 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71798CF72B83EC1300913433 /* HomeController.swift */; };
 		71798CFB2B83EE1D00913433 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71798CFA2B83EE1D00913433 /* CardView.swift */; };
+		719B51272B854AB80066DD8E /* MVVMHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B51262B854AB80066DD8E /* MVVMHome.swift */; };
+		719B512E2B85524E0066DD8E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B512D2B85524E0066DD8E /* ViewModel.swift */; };
+		719B51302B8558930066DD8E /* SubscriptionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B512F2B8558930066DD8E /* SubscriptionModel.swift */; };
 		719E301F2B83F4B10069C112 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719E301E2B83F4B10069C112 /* Protocols.swift */; };
 		719E30222B83FC5A0069C112 /* PaddedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719E30212B83FC5A0069C112 /* PaddedTextField.swift */; };
 		71A14D2F2B84D2B200531926 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A14D2E2B84D2B200531926 /* TabView.swift */; };
@@ -40,9 +46,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		716E9AD12B85E2EE000898EA /* FAQItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQItem.swift; sourceTree = "<group>"; };
+		716E9AD32B85EA21000898EA /* IntentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentManager.swift; sourceTree = "<group>"; };
+		716E9AD52B85EB77000898EA /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		71798CF42B83EA9800913433 /* HomeVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeVC.storyboard; sourceTree = "<group>"; };
 		71798CF72B83EC1300913433 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		71798CFA2B83EE1D00913433 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		719B51262B854AB80066DD8E /* MVVMHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMHome.swift; sourceTree = "<group>"; };
+		719B512D2B85524E0066DD8E /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		719B512F2B8558930066DD8E /* SubscriptionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionModel.swift; sourceTree = "<group>"; };
 		719E301E2B83F4B10069C112 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		719E30212B83FC5A0069C112 /* PaddedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddedTextField.swift; sourceTree = "<group>"; };
 		71A14D2E2B84D2B200531926 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
@@ -88,6 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				71798CF72B83EC1300913433 /* HomeController.swift */,
+				716E9AD52B85EB77000898EA /* SettingsVC.swift */,
+				716E9AD32B85EA21000898EA /* IntentManager.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -105,6 +119,22 @@
 				71798CF42B83EA9800913433 /* HomeVC.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		719B512B2B85516B0066DD8E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		719B512C2B8551770066DD8E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				719B512F2B8558930066DD8E /* SubscriptionModel.swift */,
+				716E9AD12B85E2EE000898EA /* FAQItem.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		719E30202B83F72F0069C112 /* PickerViewMV */ = {
@@ -174,6 +204,7 @@
 		71BA2A3D2B7BC3C800F623B5 /* GrabArchitecture */ = {
 			isa = PBXGroup;
 			children = (
+				719E30202B83F72F0069C112 /* PickerViewMV */,
 				71BA2A3E2B7BC3C800F623B5 /* GrabArchitectureApp.swift */,
 				71BA2A642B7BDBCF00F623B5 /* Shared.swift */,
 				71A14D472B85119300531926 /* Enums.swift */,
@@ -182,7 +213,6 @@
 				719E301E2B83F4B10069C112 /* Protocols.swift */,
 				71A14D492B85121B00531926 /* Color.swift */,
 				71A14D4C2B85153800531926 /* APIManager.swift */,
-				719E30202B83F72F0069C112 /* PickerViewMV */,
 				71BA2A5F2B7BD64400F623B5 /* VIPER */,
 				71BA2A5E2B7BD63F00F623B5 /* MV* */,
 				71BA2A5D2B7BD63A00F623B5 /* MVC */,
@@ -217,6 +247,10 @@
 		71BA2A5C2B7BD63500F623B5 /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				719B512D2B85524E0066DD8E /* ViewModel.swift */,
+				719B51262B854AB80066DD8E /* MVVMHome.swift */,
+				719B512C2B8551770066DD8E /* Model */,
+				719B512B2B85516B0066DD8E /* View */,
 			);
 			path = MVVM;
 			sourceTree = "<group>";
@@ -335,11 +369,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				719B51272B854AB80066DD8E /* MVVMHome.swift in Sources */,
 				71A14D4D2B85153800531926 /* APIManager.swift in Sources */,
 				71BA2A632B7BDA3800F623B5 /* MVHome.swift in Sources */,
 				71A14D3F2B84F1B700531926 /* CustomModifiers.swift in Sources */,
 				71A14D4A2B85121B00531926 /* Color.swift in Sources */,
 				71BA2A5B2B7BD37200F623B5 /* K.swift in Sources */,
+				719B512E2B85524E0066DD8E /* ViewModel.swift in Sources */,
 				71798CF82B83EC1300913433 /* HomeController.swift in Sources */,
 				71BA2A592B7BD0C100F623B5 /* CircleTextIndicator.swift in Sources */,
 				71798CFB2B83EE1D00913433 /* CardView.swift in Sources */,
@@ -348,6 +384,7 @@
 				71A14D3D2B84F16500531926 /* Extensions.swift in Sources */,
 				71BA2A412B7BC3C800F623B5 /* ArchPickerView.swift in Sources */,
 				71A14D482B85119300531926 /* Enums.swift in Sources */,
+				716E9AD22B85E2EE000898EA /* FAQItem.swift in Sources */,
 				71BA2A512B7BC72E00F623B5 /* Helper.swift in Sources */,
 				71A14D392B84E6C400531926 /* Model.swift in Sources */,
 				71BA2A652B7BDBCF00F623B5 /* Shared.swift in Sources */,
@@ -358,7 +395,10 @@
 				71BA2A3F2B7BC3C800F623B5 /* GrabArchitectureApp.swift in Sources */,
 				71A14D462B850BA300531926 /* WebViewRepresentable.swift in Sources */,
 				71BA2A532B7BC7EF00F623B5 /* ArchPickerLayout.swift in Sources */,
+				716E9AD42B85EA21000898EA /* IntentManager.swift in Sources */,
+				719B51302B8558930066DD8E /* SubscriptionModel.swift in Sources */,
 				719E301F2B83F4B10069C112 /* Protocols.swift in Sources */,
+				716E9AD62B85EB77000898EA /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
