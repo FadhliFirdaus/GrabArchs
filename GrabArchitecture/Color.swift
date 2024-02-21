@@ -10,4 +10,5 @@ import SwiftUI
 
 extension Color {
     static let grabGreen = Color(hex: "#0a9830")
+    static let grabBrown = Color(hex: "#b46438")
 }

@@ -30,13 +30,12 @@ struct MVHomeView:View {
                         Spacer()
                             .frame(height: 10)
                         CardListView()
-//                        OrderAgainCards()
                         let randomizer = [AnyView(OrderAgainCards()), AnyView(CardPager())].shuffled()
                         ForEach(randomizer, id: \.uniqueIdentifier){view in
                             view
                         }
                         Spacer()
-                            .frame(height: screenHeight/3)
+                            .frame(height: 200)
                     }
                 }
             }
@@ -120,7 +119,7 @@ struct CardPager:View{
 }
 
 struct OrderAgainCards:View {
-    @State var historyList:[HistoryModel] = mockPurchaseHistories
+    @State var historyList:[HistoryModel] = []
     var body: some View {
         VStack{
             if(historyList.isEmpty){
@@ -177,23 +176,24 @@ struct OrderAgainCards:View {
                     .scrollIndicators(.hidden)
                     .frame(width: screenWidth, height: screenHeight/4.5, alignment: .top)
                 }
-                .frame(width: screenWidth, height: screenHeight/2.6, alignment: .top)
-//                .debugBlue()
+                .frame(width: screenWidth, height: screenHeight/3.5, alignment: .top)
+                
                 .onAppear(perform: {
                     historyList = historyList.shuffled()
                 })
             }
         }
+        .frame(height: historyList.isEmpty ? 10:screenHeight/3.5)
         .onAppear(perform: {
             fetchHistory()
         })
     }
     
     func fetchHistory(){
-//        let randomDelayInSeconds = Double.random(in: 1...2)
-//        DispatchQueue.main.asyncAfter(deadline: .now() + randomDelayInSeconds) {
-//            historyList = mockPurchaseHistories
-//        }
+        let randomDelayInSeconds = Double.random(in: 1...2)
+        DispatchQueue.main.asyncAfter(deadline: .now() + randomDelayInSeconds) {
+            historyList = mockPurchaseHistories
+        }
     }
     
     func getOfferString(offerType:Offer, offerValue:Int) -> String{
@@ -426,9 +426,9 @@ struct BannerCardView: View {
     }
     
     func fetchAds() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.75) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
             
-            withAnimation {
+            withAnimation(.spring){
                 bannerData = mockAd
                 bannerRetrieved = true
                 bannerOpacity = 1.0

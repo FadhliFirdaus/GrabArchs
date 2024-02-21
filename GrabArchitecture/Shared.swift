@@ -78,3 +78,9 @@ let mockCommercialCards = [
     CommercialCard(ccName: "Grab Express", ccCTAText: "Deliver Now", ccRes: "", ccIntent: .Delivery, ccShortDesc: "Delivery parcels with GrabExpress")
 ]
 
+let mockFAQ:[(String, Intent)] = [
+    ("Partner Loyalty Programme" , .LoyaltyFAQ),
+    ("Rewards" , .RewardsFAQ),
+    ("Subscriptions" , .Subscriptions),
+    ("Challenges" , .Challenges)
+]

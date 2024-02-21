@@ -37,4 +37,8 @@ enum Intent:String {
     case Hotel = "GHotel"
     case Donate = "GDonate"
     case Delivery = "GDelivery"
+    case LoyaltyFAQ = "GLoyaltyFAQ"
+    case RewardsFAQ = "GRewardsFAQ"
+    case Subscriptions = "GSubscriptions"
+    case Challenges = "GChallenges"
 }

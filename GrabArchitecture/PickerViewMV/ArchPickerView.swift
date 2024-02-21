@@ -35,7 +35,7 @@ struct ArchPickerView: View {
                 timer = nil
             }
             if(duration == 1){
-                withAnimation {
+                withAnimation(.spring){
                     opacityAnimation = 0.0
                 }
             }
