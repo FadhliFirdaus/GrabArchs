@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		716E9AD22B85E2EE000898EA /* FAQItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716E9AD12B85E2EE000898EA /* FAQItem.swift */; };
+		716E9AD42B85EA21000898EA /* IntentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716E9AD32B85EA21000898EA /* IntentManager.swift */; };
+		716E9AD62B85EB77000898EA /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716E9AD52B85EB77000898EA /* SettingsVC.swift */; };
 		71798CF52B83EA9800913433 /* HomeVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71798CF42B83EA9800913433 /* HomeVC.storyboard */; };
 		71798CF82B83EC1300913433 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71798CF72B83EC1300913433 /* HomeController.swift */; };
 		71798CFB2B83EE1D00913433 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71798CFA2B83EE1D00913433 /* CardView.swift */; };
@@ -45,6 +47,8 @@
 
 /* Begin PBXFileReference section */
 		716E9AD12B85E2EE000898EA /* FAQItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQItem.swift; sourceTree = "<group>"; };
+		716E9AD32B85EA21000898EA /* IntentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentManager.swift; sourceTree = "<group>"; };
+		716E9AD52B85EB77000898EA /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		71798CF42B83EA9800913433 /* HomeVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeVC.storyboard; sourceTree = "<group>"; };
 		71798CF72B83EC1300913433 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		71798CFA2B83EE1D00913433 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -96,6 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				71798CF72B83EC1300913433 /* HomeController.swift */,
+				716E9AD52B85EB77000898EA /* SettingsVC.swift */,
+				716E9AD32B85EA21000898EA /* IntentManager.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -389,8 +395,10 @@
 				71BA2A3F2B7BC3C800F623B5 /* GrabArchitectureApp.swift in Sources */,
 				71A14D462B850BA300531926 /* WebViewRepresentable.swift in Sources */,
 				71BA2A532B7BC7EF00F623B5 /* ArchPickerLayout.swift in Sources */,
+				716E9AD42B85EA21000898EA /* IntentManager.swift in Sources */,
 				719B51302B8558930066DD8E /* SubscriptionModel.swift in Sources */,
 				719E301F2B83F4B10069C112 /* Protocols.swift in Sources */,
+				716E9AD62B85EB77000898EA /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

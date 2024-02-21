@@ -11,10 +11,7 @@ import SwiftUI
 
 class HomeVC : UIViewController {
     
-    @IBOutlet weak var searchBarStack: UIStackView!
-    @IBOutlet weak var searchTextField: UITextField!
-    @IBOutlet weak var scanButton: UIButton!
-    
+    @IBOutlet weak var settingsButton: UIButton!
         // vars
     let relativeScreen = K.screenWidth/10
     
@@ -24,13 +21,16 @@ class HomeVC : UIViewController {
     }
     
     func configureViews(){
-        scanButton.contentMode = .scaleToFill
-//        let cardView = CardView(frame: scanButton.bounds)
-//        let scanBounds = scanButton.frame
-//        scanButton.bringSubviewToFront(cardView)
     }
+    
+    @IBAction func settingsDidTapped(_ sender: Any) {
+        let intentManager = IntentManager.shared
+        if let navigationController = self.navigationController {
+            intentManager.segueIntent(intent: .Settings, from: navigationController)
+        } else {
+            print("Error: UINavigationController is nil.")
+        }    }
 }
-
 
 struct HomeVCRepresentable : UIViewControllerRepresentable {
     func makeUIViewController(context: Context) -> UIViewController {
@@ -39,10 +39,14 @@ struct HomeVCRepresentable : UIViewControllerRepresentable {
             fatalError("ViewController not implemented in storyboard")
         }
         
+        
         return viewController
+    }
+    
+    mutating func setNC(newNC:UINavigationController) {
+        
     }
     
     func updateUIViewController(_ uiViewController: UIViewController, context: Context) {
     }
-    
 }

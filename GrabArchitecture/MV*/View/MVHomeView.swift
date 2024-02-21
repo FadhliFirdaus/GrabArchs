@@ -427,7 +427,6 @@ struct BannerCardView: View {
     
     func fetchAds() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
-            
             withAnimation(.spring){
                 bannerData = mockAd
                 bannerRetrieved = true
